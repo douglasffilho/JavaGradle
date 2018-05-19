@@ -13,7 +13,7 @@ public class PrintController {
 	}
 
 	public void printControllerAction() {
-		log.debug("M=printControllerAction, I=iniciando servico para impressao");
+		log.info("M=printControllerAction, I=iniciando servico para impressao");
 		printService.print();
 	}
 }

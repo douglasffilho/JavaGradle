@@ -17,7 +17,7 @@ public class PrintServiceImpl implements PrintService {
 	public String print() {
 		String output = printer.getOutput();
 
-		log.debug("M=print, I=Impressao: " + output);
+		log.info("M=print, I=Impressao: " + output);
 
 		System.out.println(output);
 
