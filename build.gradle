@@ -27,8 +27,15 @@ buildscript {
 apply plugin: "java"
 apply plugin: "eclipse"
 apply plugin: "idea"
+apply plugin: "application"
 
 group = 'br.com.douglasffilho'
+
+mainClassName = group + '.JavaGradle.MainApplication'
+
+run {
+    args += ''
+}
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
