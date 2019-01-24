@@ -10,10 +10,8 @@ public class Solution {
 
         AtomicInteger result = new AtomicInteger(1);
 
-        IntStream intStream = Arrays.stream(A).filter(val -> val > 0);
-
-        int min = intStream.min().getAsInt();
-        int max = intStream.max().getAsInt();
+        int min = Arrays.stream(A).filter(val -> val > 0).min().getAsInt();
+        int max = Arrays.stream(A).filter(val -> val > 0).max().getAsInt();
 
         IntStream.rangeClosed(min, max);
 
