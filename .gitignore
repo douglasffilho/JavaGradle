@@ -1,6 +1,7 @@
 /build/
 /out/
 !gradle/wrapper/gradle-wrapper.jar
+.gradle
 
 ### LOG4J ###
 *.log
